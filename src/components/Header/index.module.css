@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgb(220, 20, 103);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: row;
+}
+
+.logoBox {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.logo {
+    width: 80px;
+    object-fit: cover;
+    height: 80px;
+}
+
+.title {
+    padding: 0 10px;
+}
