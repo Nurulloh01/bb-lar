@@ -1,0 +1,203 @@
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.imageBox{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.productBox {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 220px;
+    margin: 10px 25% 10px 5%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+} 
+.rowone {
+    display: flex;
+    width: 33%;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 67%;
+    height: 100%;
+}
+
+.column { 
+    display: block;
+}
+
+.nameBox {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    font-size: 25px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 50%;
+    height: 50%;
+    flex-direction: column;
+}
+
+.priceName {
+    display: flex;
+    font-size: 25px;
+    font-family: 'Montserrat6';
+}
+
+.buttonBox {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.schotBox {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.schot {
+    display: flex;
+    width: 130px;
+    height: 30px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .productBox {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: 180px;
+        margin: 10px auto;
+        border-radius: 10px;
+        overflow: hidden;
+    } 
+
+    .imageBox {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .rowone {
+        display: flex;
+        width: 50%;
+        height: 100%;
+    }
+    
+    .row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 100%;
+    }
+    .image {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .nameBox {
+        display: flex;
+        flex-direction: row;
+        font-size: 17px;
+        width: 100%;
+        height: 25%;
+    }
+
+    .priceName {
+        display: flex;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat6';
+    }
+
+    .price {
+        display: flex;
+        font-size: 14px;
+        width: 100%;
+        height: 25%;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .buttonBox {
+        display: flex;
+        width: 100%;
+        height: 25%;
+        flex-direction: row;
+    }
+
+    .schotBox {
+        display: flex;
+        width: 100%;
+        height: 25%;
+    }
+
+    .schot {
+        display: flex;
+        width: 130px;
+        height: 30px;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid grey;
+    }
+    
+}

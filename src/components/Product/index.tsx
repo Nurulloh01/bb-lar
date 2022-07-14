@@ -1,7 +1,6 @@
 import React, { FC, useState } from "react";
 import styles from './index.module.css'
-import { Product, Vegetables } from '../../../dyumData'
-import TextView from "../../Text";
+import TextView from "../Text";
 
 interface Props {
     name?: string;
@@ -13,7 +12,7 @@ interface Props {
     onCountChange: (e: number) => void;
 }
 
-const BreadView: FC<Props> = ({
+const ProductContainer: FC<Props> = ({
     name,
     url,
     title,
@@ -39,24 +38,28 @@ const BreadView: FC<Props> = ({
         <div className={styles.container}>
             <TextView title={name} />
             <div className={styles.productBox}>
-                <div className={styles.column}>
+                <div className={styles.rowone}>
                     <div className={styles.imageBox}>
                         <img className={styles.image} src={url} alt="" />
                     </div>
+                </div>
+                <div className={styles.row}>
                     <div className={styles.nameBox}>
-                        <span className={styles.priceName}>{title}</span>
+                        <span>{title}</span>
                     </div>
                     <div className={styles.price}>
                         <span>{size}</span>
                         <span>{price}</span>
                     </div>
                     <div className={styles.buttonBox}>
-                        <button className={styles.button} onClick={() => DecreaseCounter()}>-</button>
+                        <button style={{border: '1px solid gray'}} className={styles.button} onClick={() => DecreaseCounter()}>-</button>
                         <div className={styles.button}>{count}</div>
-                        <button onClick={() => IncreaseCounter()} className={styles.button}>+</button>
+                        <button style={{border: '1px solid gray'}} onClick={() => IncreaseCounter()} className={styles.button}>+</button>
                     </div>
-                    <div className={styles.schot}>
-                        {count * price}
+                    <div className={styles.schotBox}>
+                        <div className={styles.schot}>
+                            {count * price}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -64,4 +67,4 @@ const BreadView: FC<Props> = ({
     );
 }
 
-export default BreadView;
+export default ProductContainer;

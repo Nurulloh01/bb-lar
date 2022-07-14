@@ -2,15 +2,181 @@
     display: flex;
     width: 100%;
     height: 100%;
+    bottom: 0;
     position: relative;
-   justify-content: center;
+    justify-content: center;
 }
 
 .content {
     display: flex;
-    width: 300px;
-    height: 200px;
+    width: 23%;
+    height: 100%;
     position: fixed;
     bottom: 0%;
-    background-color: aqua;
+    right: 0%;
+    background-color: #fff;
+    flex-direction: column;
+}
+
+.TextBox {
+    display: flex;
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 5px 0;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ButtonBox {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.itemContent {
+    display: flex;
+    flex-direction: column;
+    height: 35%;
+    width: 100%;
+    overflow: scroll;
+    border-bottom: 1px solid gray;
+}
+
+.itemBox {
+    display: flex;
+    width: 90%;
+    /* height: 50%; */
+    margin: 0 auto;
+    padding: 5px 0;
+    flex-direction: row;
+    justify-content: space-between !important;
+}
+
+.bottomBox {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+}
+
+.sendBox {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    padding: 5px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomBoxMobile {
+    display: flex;
+    position: fixed;
+    width: 22%;
+    height: 15%;
+    bottom: 0%;
+    right: 0%;
+    padding: 5px 10px;
+    border-radius: 10px 0 0 0;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.TextBoxMobile {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+
+    .content {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .TextBox {
+        display: flex;
+        width: 90%;
+        height: 50%;
+        margin: 0 auto;
+        padding: 5px 0;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .ButtonBox {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+    
+    .itemContent {
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+        width: 100%;
+        overflow: scroll;
+        border-bottom: 1px solid gray;
+    }
+    
+    .itemBox {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        padding: 5px 0;
+        flex-direction: row;
+        justify-content: space-between !important;
+    }
+    
+    .bottomBox {
+        display: flex;
+        flex-direction: column;
+        height: 25%;
+    }
+    
+    .sendBox {
+        display: flex;
+        width: 100%;
+        height: 45%;
+        padding: 5px auto;
+        /* background-color: aqua; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .TextBoxMobile  {
+      display: flex;
+      height: 30%;
+      width: 90%;
+      align-items: center;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+
+    .bottomBoxMobile{
+        display: flex;
+        height: 15%;
+        width: 100%;
+        position: fixed;
+        bottom: 0%;
+        flex-direction: column;
+        background-color: #fff;
+    }
+
+    .ButtonBoxMobile {
+        width: 90%;
+        margin: 0 auto;
+    }
+
 }

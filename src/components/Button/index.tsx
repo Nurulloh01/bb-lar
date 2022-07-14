@@ -5,12 +5,14 @@ interface Props {
     title?: string;
     onClick?: () => void;
     style?: CSSProperties;
+    loading?: any
 }
 
 const ButtonView: FC<Props> = ({
     title,
     onClick,
     style,
+    loading
 }) => {
     return (
         <div className={styles.container}>
@@ -18,6 +20,7 @@ const ButtonView: FC<Props> = ({
                 style={{
                     ...style
                 }}
+                onLoad={loading}
                 className={styles.button}
                 onClick={onClick}>
                 {title}
