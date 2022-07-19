@@ -3,6 +3,7 @@ const Assets = {
     bread1: require("../assets/images/non.jpeg"),
     bread2: require("../assets/images/non2.jpg"),
     logobolla: require('../assets/images/logobollar.jpg'),
+    logobollar: require('../assets/images/logobollar.jpg'),
     kartoshka: require('../assets/images/kartoshka.jpg'),
     piyoz: require('../assets/images/piyoz.jpg'),
     sabzi: require('../assets/images/sabzi.jpg'),

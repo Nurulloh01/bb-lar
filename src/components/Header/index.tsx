@@ -7,7 +7,11 @@ const HeaderView = () => {
         <div className={styles.container}>
             <div className={styles.content}>
                 <div className={styles.logoBox}>
-                    <img className={styles.logo} src={Assets.logobolla} alt="" />
+                    <img className={styles.logo} src={Assets.logobollar} alt="" />
+                </div>
+                <div className={styles.contact}>
+                    <span>Murojaat uchun:</span>
+                     <span>+998 94 392 06 16</span>    
                 </div>
             </div>
         </div>

@@ -72,7 +72,7 @@ const SendMessage: FC<Props> = ({
                 <label className={styles.label}>{name}</label>
                 <input className={styles.input} type="text" name="name" />
 
-                <input type="hidden" name="content" value={result} />
+                <input type="hidden" name="content" value={result} minLength={1} />
 
                 <label className={styles.label}>{number}</label>
                 <input className={styles.input} type="tel" id="phone" name="number"
