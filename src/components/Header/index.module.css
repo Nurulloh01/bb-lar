@@ -35,6 +35,18 @@
     padding: 0 10px;
 }
 
+.aPhone {
+    color: rgb(23, 26, 61);
+    text-decoration: none;
+    transition: .3s ease;
+    list-style: none;
+    padding-left: 3px;
+}
+
+.aPhone:hover {
+    opacity: .8;
+}
+
 @media (max-width: 767px) {
 
     .container {
@@ -55,5 +67,17 @@
     .contact {
         display: flex;
         flex-direction: column;
+    }
+    
+    .aPhone {
+        color: rgb(23, 26, 61);
+        text-decoration: none;
+        transition: .3s ease;
+        list-style: none;
+        padding-left: 3px;
+    }
+    
+    .aPhone:hover {
+        opacity: .8;
     }
 }

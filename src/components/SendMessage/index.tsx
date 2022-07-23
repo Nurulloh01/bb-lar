@@ -4,6 +4,7 @@ import styles from './index.module.css';
 import { render } from "react-dom";
 import Swal from "sweetalert2";
 import { Button } from "antd";
+import { useTranslation } from "react-i18next";
 
 interface Props {
     name?: string;
@@ -21,15 +22,16 @@ const SendMessage: FC<Props> = ({
     counts
 }) => {
 
+    
     const [loading, setLoading] = useState(false)
 
     const OnButtonClick = () => {
         setLoading(true)
         const timeOutFunc = () => {
             setLoading(false);
-          };
-          setTimeout(timeOutFunc, 3000);
-          clearTimeout(3000);
+        };
+        setTimeout(timeOutFunc, 3000);
+        clearTimeout(3000);
     }
     async function SendEmail(e: { preventDefault: () => void; }) {
         e.preventDefault()
@@ -48,8 +50,8 @@ const SendMessage: FC<Props> = ({
                 Swal.fire("Murojatingiz qabul qilindi tez orada operatorlarimiz siz bilan bog'lanishadi ").then(r => {
                     window.location.reload()
                 })
-                
-                
+
+
             }
 
         } catch (error) {
@@ -61,6 +63,7 @@ const SendMessage: FC<Props> = ({
         return p + `<p>${value.title}\t\t${value.count}</p>`
     }, "")
 
+    const { t } = useTranslation()
 
 
     return (
@@ -82,13 +85,13 @@ const SendMessage: FC<Props> = ({
                 <label className={styles.label}>{coment}</label>
                 <textarea className={styles.coment} name="message"></textarea>
 
-                <Button 
-                 className={styles.submit}
-                 type='primary' 
-                 htmlType="submit"
-                 onClick={() => OnButtonClick()}     
-                 loading={loading}
-                 >Tasdiqlayman</Button>
+                <Button
+                    className={styles.submit}
+                    type='primary'
+                    htmlType="submit"
+                    onClick={() => OnButtonClick()}
+                    loading={loading}
+                >Tasdiqlayman</Button>
             </form>
         </div>
     )
